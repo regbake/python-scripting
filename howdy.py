@@ -13,8 +13,8 @@ obj_first = {
 
 obj_second = {
 	'one': 1,
-	'first_array': first_array,
-	'second_array': second_array,
+	#'first_array': first_array,
+	#'second_array': second_array,
 	'four': 4
 }
 
@@ -26,8 +26,12 @@ common = obj_first.keys() & obj_second.keys()
 different_first = obj_first.keys() - obj_second.keys()
 different_second = obj_second.keys() - obj_first.keys()
 
+common_pairs = obj_first.items() & obj_second.items()
+diff_second_pairs = obj_second.items() - obj_first.items()
 
-print('common is: ', common)
-print('different_first is: ', different_first)
-print('different_second is: ', different_second)
 
+# print('common is: ', common)
+# print('different_first is: ', different_first)
+# print('different_second is: ', different_second)
+
+print('common_pairs are: ', common_pairs)
