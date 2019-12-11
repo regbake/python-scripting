@@ -1,3 +1,5 @@
+from sys import argv
+
 first = 'the first string here'
 second = 981212
 third = 'string'
